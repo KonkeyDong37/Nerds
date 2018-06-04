@@ -25,12 +25,10 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-for (var i = 0; i < catalog_item.length; i++) {
-    catalog_item[i].addEventListener('mouseover', function(evt) {
-          event.preventDefault();
-          item_info.classList.add("js-catalog-item-info-slide-up");
-      });
-  }
+// for (var i = 0; i < catalog_item.length; i++) {
+//   catalog_item[i]
+//   function
+// }
 
 // catalog_item.addEventListener("mouseover", function (evt) {
 //   evt.preventDefault();
