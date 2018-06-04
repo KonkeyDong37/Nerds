@@ -1083,6 +1083,10 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
+.js-modal-show {
+  display: block;
+}
+
 .modal h2 {
   margin: 0;
   padding: 0;
