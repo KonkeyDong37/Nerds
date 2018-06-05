@@ -181,6 +181,7 @@ input[type="radio"].visually-hidden {
 .promo {
   position: relative;
   overflow: hidden;
+  width: 1160px;
 }
 
 .sliders {
@@ -282,10 +283,13 @@ input[type="radio"].visually-hidden {
   transform: translateX(-2400px);
 }
 
-.slider-control {
+.slider-control-wrapper {
   position: absolute;
-  bottom: 10px;
+  bottom: 95px;
   left: 50%;
+  transform: translateX(-50%);
+  width: 88px;
+  height: 18px;
 }
 
 .slider-control ul {
@@ -293,21 +297,21 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  position: absolute;
   width: 70px;
-  transform: translateX(-50%);
   list-style: none;
 }
 
 .slider-control-radio {
   position: relative;
+  bottom: 0;
+  left: 0;
   cursor: pointer;
 }
 
 .slider-control-radio input[type="radio"] + .slider-control-indicator {
   position: absolute;
   top: 0;
-  left: -10px;
+  left: 0;
   width: 18px;
   height: 18px;
   background-color: #ffffff;
