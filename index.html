@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link href="css\normalize.css" rel="stylesheet" >
     <link href="css\style.css" rel="stylesheet" >
     <link href="css\normalize.css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
@@ -78,6 +79,32 @@
           </li>
 
         </ul>
+
+        <form class="slider-control" method="post">
+          <ul>
+            <li class="slider-control-list">
+              <label class="slider-control-radio">
+                <input class="visually-hidden slider-input" type="radio" name="lsider" checked>
+                <span class="slider-control-indicator slider-control-1"></span>
+                <span class="visually-hidden">Переключить на первый слайдер</span>
+              </label>
+            </li>
+            <li class="slider-control-list">
+              <label class="slider-control-radio">
+                <input class="visually-hidden slider-input" type="radio" name="lsider">
+                <span class="slider-control-indicator slider-control-2"></span>
+                <span class="visually-hidden">Переключить на второй слайдер</span>
+              </label>
+            </li>
+            <li class="slider-control-list">
+              <label class="slider-control-radio">
+                <input class="visually-hidden slider-input" type="radio" name="lsider">
+                <span class="slider-control-indicator slider-control-3"></span>
+                <span class="visually-hidden">Переключить на третий слайдер</span>
+              </label>
+            </li>
+          </ul>
+        </form>
 
       </section>
 

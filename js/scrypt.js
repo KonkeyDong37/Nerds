@@ -2,6 +2,10 @@ var popup = document.querySelector(".modal")
 var modal_show = document.querySelector(".button-contacts")
 var modal_close = document.querySelector(".modal-close")
 var modal_name = document.querySelector(".modal-name")
+var slider = document.querySelector(".sliders")
+var slider_control_1 = document.querySelector(".slider-control-1")
+var slider_control_2 = document.querySelector(".slider-control-2")
+var slider_control_3 = document.querySelector(".slider-control-3")
 var catalog_item = document.querySelectorAll(".catalog-item")
 var item_info = document.querySelectorAll(".catalog-item-info")
 
@@ -23,6 +27,24 @@ window.addEventListener("keydown", function (evt) {
       popup.classList.remove("js-modal-show");
     }
   }
+});
+
+slider_control_1.addEventListener("click", function (evt) {
+  slider.classList.remove("js-show-slider-2");
+  slider.classList.remove("js-show-slider-3");
+  slider.classList.add("js-show-slider-1");
+});
+
+slider_control_2.addEventListener("click", function (evt) {
+  slider.classList.remove("js-show-slider-1");
+  slider.classList.remove("js-show-slider-3");
+  slider.classList.add("js-show-slider-2");
+});
+
+slider_control_3.addEventListener("click", function (evt) {
+  slider.classList.remove("js-show-slider-1");
+  slider.classList.remove("js-show-slider-2");
+  slider.classList.add("js-show-slider-3");
 });
 
 // for (var i = 0; i < catalog_item.length; i++) {
