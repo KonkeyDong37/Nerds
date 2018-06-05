@@ -164,6 +164,10 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.site-navigation-current a:not([href]) {
+  color: #000000;
+}
+
 .site-navigation-current::after {
   content: "";
   position: absolute;
