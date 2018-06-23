@@ -1064,8 +1064,13 @@ input[type="radio"].visually-hidden {
   background-color: #d7373b;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:hover::before {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.catalog-item:hover::before {
+  background-color: #4d4d4d;
 }
 
 @keyframes slide-up {
@@ -1073,22 +1078,16 @@ input[type="radio"].visually-hidden {
   100% { transform: translateY(-230px); }
 }
 
-/* .catalog-item:hover .catalog-item-info {
+.catalog-item:hover .catalog-item-info {
   animation-name: slide-up;
-  animation-duration: 0.4s;
-  animation-timing-function: cubic-bezier(ease-in-out);
   animation-fill-mode: forwards;
-} */
+}
 
 .js-catalog-item-info-slide-up {
   animation-name: slide-up;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(ease-in-out);
   animation-fill-mode: forwards;
-}
-
-.catalog-item:hover::before {
-  background-color: #4d4d4d;
 }
 
 .pagination-list {
