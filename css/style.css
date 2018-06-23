@@ -1078,12 +1078,10 @@ input[type="radio"].visually-hidden {
   100% { transform: translateY(-230px); }
 }
 
-/* .catalog-item:hover .catalog-item-info {
+.catalog-item:hover .catalog-item-info {
   animation-name: slide-up;
-  animation-duration: 0.4s;
-  animation-timing-function: cubic-bezier(ease-in-out);
   animation-fill-mode: forwards;
-} */
+}
 
 .js-catalog-item-info-slide-up {
   animation-name: slide-up;
